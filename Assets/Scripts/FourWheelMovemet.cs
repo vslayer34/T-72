@@ -5,10 +5,10 @@ using UnityEngine;
 public class FourWheelMovemet : MonoBehaviour
 {
     [SerializeField]
-    WheelCollider[] wheelColliders;
+    WheelCollider frontLeftCollider, frontRightCollider, backLeftCollider, backRightCollider;
 
     [SerializeField]
-    Transform[] wheelMeshes;
+    Transform frontLeftMesh, frontRigtMesh, backLeftMesh, backRightMesh;
 
     [SerializeField]
     VehicleData brdm2;
@@ -16,13 +16,20 @@ public class FourWheelMovemet : MonoBehaviour
     float horizontalInput;
     float verticalInput;
 
-    WheelCollider frontLeftWheel;
-    WheelCollider frontRightWheel;
+    WheelCollider[] wheelColliders = new WheelCollider[4];
+    Transform[] wheelMeshes = new Transform[4];
 
     private void Start()
     {
-        frontLeftWheel = wheelColliders[0];
-        frontRightWheel = wheelColliders[3];
+        wheelColliders[0] = frontLeftCollider;
+        wheelColliders[1] = frontRightCollider;
+        wheelColliders[2] = backLeftCollider;
+        wheelColliders[3] = backRightCollider;
+
+        wheelMeshes[0] = frontLeftMesh;
+        wheelMeshes[1] = frontRigtMesh;
+        wheelMeshes[2] = backLeftMesh;
+        wheelMeshes[3] = backRightMesh;
     }
 
     void Update()
@@ -36,13 +43,12 @@ public class FourWheelMovemet : MonoBehaviour
         for (int i = 0; i < wheelColliders.Length; i++)
         {
             UpdateWheelPos(wheelColliders[i], wheelMeshes[i]);
-            MoveVehicle(wheelColliders[i]);
-
-            if (wheelColliders[i] == frontRightWheel || wheelColliders[i] == frontLeftWheel)
-            {
-                SteerVehicle(wheelColliders[i]);
-            }
+            //MoveVehicle(wheelColliders[i]);
+            //SteerVehicle(wheelColliders[i]);
         }
+
+        SteerVehicle(frontLeftCollider);
+        SteerVehicle(frontRightCollider);
     }
 
 

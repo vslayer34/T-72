@@ -737,8 +737,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4046617, y: 0.8002235, z: 5.748646}
-  m_Center: {x: -0.012179136, y: 1.0552787, z: 0.018000603}
+  m_Size: {x: 2.4046617, y: 1.3919544, z: 5.748646}
+  m_Center: {x: -0.012179136, y: 0.75941324, z: 0.018000603}
 --- !u!114 &825362930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,16 +751,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a54ea34da17dda844bd881bc1ae823c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wheelColliders:
-  - {fileID: 6862434134548940926}
-  - {fileID: 5028662263149048918}
-  - {fileID: 4008700117336765167}
-  - {fileID: 454299767703319104}
-  wheelMeshes:
-  - {fileID: 8318016296588776631}
-  - {fileID: 6058804489329644246}
-  - {fileID: 6446322818729293963}
-  - {fileID: 8764445571405415870}
+  frontLeftCollider: {fileID: 6862434134548940926}
+  frontRightCollider: {fileID: 5028662263149048918}
+  backLeftCollider: {fileID: 4008700117336765167}
+  backRightCollider: {fileID: 454299767703319104}
+  frontLeftMesh: {fileID: 2015007547830285137}
+  frontRigtMesh: {fileID: 8509295413789401254}
+  backLeftMesh: {fileID: 6627833543004914356}
+  backRightMesh: {fileID: 5925023425639710264}
+  brdm2: {fileID: 11400000, guid: 28b0f39af19fadc41b583113d9f4b57b, type: 2}
 --- !u!1 &4579477342689091778
 GameObject:
   m_ObjectHideFlags: 0

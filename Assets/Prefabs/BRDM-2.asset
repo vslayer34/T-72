@@ -15,4 +15,4 @@ MonoBehaviour:
   name: BRDM-2
   horsePower: 1400
   brakePower: 0
-  maxSteer: 50
+  maxSteer: 30
