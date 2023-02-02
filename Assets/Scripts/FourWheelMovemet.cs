@@ -47,8 +47,12 @@ public class FourWheelMovemet : MonoBehaviour
             //SteerVehicle(wheelColliders[i]);
         }
 
-        SteerVehicle(frontLeftCollider);
-        SteerVehicle(frontRightCollider);
+        // move with the 2 back wheels
+        MoveVehicle(backLeftCollider, backRightCollider);
+
+
+        // steer front wheels
+        SteerVehicle(frontLeftCollider, frontRightCollider);
     }
 
 
@@ -63,13 +67,15 @@ public class FourWheelMovemet : MonoBehaviour
         wheelMeshe.transform.rotation = colliderRotation;
     }
 
-    void MoveVehicle(WheelCollider wheel)
+    void MoveVehicle(WheelCollider wheel1, WheelCollider wheel2)
     {
-        wheel.motorTorque = brdm2.horsePower * -verticalInput;
+        wheel1.motorTorque = brdm2.horsePower * -verticalInput;
+        wheel2.motorTorque = brdm2.horsePower * -verticalInput;
     }
 
-    void SteerVehicle(WheelCollider wheel)
+    void SteerVehicle(WheelCollider wheel1, WheelCollider wheel2)
     {
-        wheel.steerAngle = brdm2.maxSteer * horizontalInput;
+        wheel1.steerAngle = brdm2.maxSteer * horizontalInput;
+        wheel2.steerAngle = brdm2.maxSteer * horizontalInput;
     }
 }

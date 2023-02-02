@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Vehicle", menuName = "Vehicle Data")]
 public class VehicleData : ScriptableObject
 {
-    public string name;
+    public string vehicleName;
     public float horsePower;
     public float brakePower;
     public float maxSteer;
