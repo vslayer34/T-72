@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb049978bc9b8047ac66c3b51420475, type: 3}
   m_Name: BRDM-2
   m_EditorClassIdentifier: 
-  name: BRDM-2
-  horsePower: 1400
+  vehicleName: 
+  horsePower: 2800
   brakePower: 0
   maxSteer: 30

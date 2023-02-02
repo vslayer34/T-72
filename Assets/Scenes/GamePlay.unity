@@ -765,6 +765,26 @@ PrefabInstance:
       propertyPath: wheelMeshes.Array.data[3]
       value: 
       objectReference: {fileID: 4609433760988464573}
+    - target: {fileID: 454299767703319104, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_Mass
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 454299767703319104, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 454299767703319104, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_ForceAppPointDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 454299767703319104, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2015007547830285137, guid: defec8c2b104e4140b06419c41311a31,
         type: 3}
       propertyPath: m_RootOrder
@@ -828,12 +848,52 @@ PrefabInstance:
     - target: {fileID: 3632634771428023291, guid: defec8c2b104e4140b06419c41311a31,
         type: 3}
       propertyPath: m_Mass
-      value: 1000
+      value: 7000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4008700117336765167, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_Mass
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 4008700117336765167, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4008700117336765167, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_ForceAppPointDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4008700117336765167, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4116965981623107904, guid: defec8c2b104e4140b06419c41311a31,
         type: 3}
       propertyPath: m_Name
       value: BRDM-2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028662263149048918, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_Mass
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028662263149048918, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028662263149048918, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_ForceAppPointDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028662263149048918, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5925023425639710264, guid: defec8c2b104e4140b06419c41311a31,
         type: 3}
@@ -854,6 +914,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862434134548940926, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_Mass
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862434134548940926, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862434134548940926, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_ForceAppPointDistance
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862434134548940926, guid: defec8c2b104e4140b06419c41311a31,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_Stiffness
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8509295413789401254, guid: defec8c2b104e4140b06419c41311a31,
         type: 3}
