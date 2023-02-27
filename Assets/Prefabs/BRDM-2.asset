@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vehicleName: 
   horsePower: 2800
-  brakePower: 0
+  brakePower: 10000
   maxSteer: 30
