@@ -13,6 +13,6 @@ public class VehicleUI : MonoBehaviour
 
     private void Update()
     {
-        vehicleSpeed.text = $"{vehilceData.speed * 3.6f} km/h";
+        vehicleSpeed.text = $"{(vehilceData.speed * 3.6f).ToString("0")} km/h";
     }
 }

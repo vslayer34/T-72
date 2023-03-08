@@ -20,6 +20,10 @@ public class FourWheelMovemet : MonoBehaviour
     WheelCollider[] wheelColliders = new WheelCollider[4];
     Transform[] wheelMeshes = new Transform[4];
 
+    [SerializeField]
+    TrackVehicle vehilceCurrentData;
+
+
     private void Start()
     {
         // set the colliders of the car
@@ -55,7 +59,7 @@ public class FourWheelMovemet : MonoBehaviour
         }
 
         // move with the 2 back wheels
-        MoveVehicle(backLeftCollider, backRightCollider);
+        MoveVehicle(backLeftCollider, backRightCollider, verticalInput);
 
 
         // steer front wheels
@@ -76,30 +80,21 @@ public class FourWheelMovemet : MonoBehaviour
         wheelMeshe.transform.rotation = colliderRotation;
     }
 
-    void MoveVehicle(WheelCollider wheel1, WheelCollider wheel2)
+    void MoveVehicle(WheelCollider wheel1, WheelCollider wheel2, float verticalInput)
     {
         bool moveForward, moveBackward;
 
         wheel1.motorTorque = brdm2.horsePower * verticalInput;
         wheel2.motorTorque = brdm2.horsePower * verticalInput;
 
+        if (verticalInput < 0)
+        {
+            vehilceCurrentData.speed = vehilceCurrentData.speed > brdm2.maxReverseSpeed ? brdm2.maxReverseSpeed: vehilceCurrentData.speed;
+        }
+
         //Debug.Log(wheel1.attachedRigidbody.velocity.z);
 
-        if (wheel1.attachedRigidbody.velocity.z > 0.0f)
-        {
-            moveBackward = true;
-            moveForward = false;
-        }
-        else if (wheel1.attachedRigidbody.velocity.z < 0.0f)
-        {
-            moveBackward = false;
-            moveForward = true;
-        }
-        else
-        {
-            moveBackward = false;
-            moveForward = false;
-        }
+        
     }
 
     void SteerVehicle(WheelCollider wheel1, WheelCollider wheel2)
